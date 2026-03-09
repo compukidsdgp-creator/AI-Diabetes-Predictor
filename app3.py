@@ -16,7 +16,7 @@ st.markdown("AI based clinical decision support tool")
 # LOAD DATA
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\User\Desktop\app\diabetes.csv")
+    df = pd.read_csv("diabetes.csv")
     return df
 
 df = load_data()
